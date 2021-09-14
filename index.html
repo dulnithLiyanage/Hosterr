@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hosterr</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!--? CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="./Assets/Logo.svg" alt="Hosterr Logo" class="logo" />
+      <div class="decoration">Hosterr is hiring!</div>
+      <img
+        src="./Assets/Hamburger Menu.svg"
+        alt="Hamburger Menu"
+        class="menu"
+      />
+      <div class="lists">
+        <ul>
+          <li><a href="#">Plans</a></li>
+          <li><a href="#">Find Domain</a></li>
+          <li><a href="#">Why Hosterr</a></li>
+        </ul>
+      </div>
+      <div class="sign-in-container">
+        <ul>
+          <li><a href="#">Sign in</a></li>
+          <li><a href="#" class="btn">Join Waitlist</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      const nav = document.querySelector("nav");
+
+      window.onscroll = function () {
+        let top = window.scrollY;
+        if (top > 25) {
+          nav.classList.add("active");
+        } else {
+          nav.classList.remove("active");
+        }
+      };
+    </script>
+    <main>
+      <section class="image-section">
+        <div class="img-container">
+          <img
+            src="./Assets/Hero Image (Model).png"
+            alt="Hero Image"
+            class="hero-img"
+          />
+          <img
+            src="./Assets/Purple Shape.svg"
+            alt="Purple Shape"
+            class="purple-shape"
+          />
+          <img
+            src="./Assets/Pink Shape.svg"
+            alt="Pink Shape"
+            class="pink-shape"
+          />
+          <img
+            src="./Assets/Blue Shape.svg"
+            alt="Blue Shape"
+            class="blue-shape"
+          />
+        </div>
+      </section>
+      <section class="form-section">
+        <form action="form.php">
+          <h1 id="form-title">Host your website in less than 5 minutes.</h1>
+          <p id="form-description">
+            With Hosterr, get your website up and running in no less than 5
+            minutes with the most competetive pricing packages available online.
+          </p>
+          <div class="email-btn">
+            <input
+              type="email"
+              name="email"
+              id="form-email"
+              placeholder="Enter e-mail address"
+              required
+            />
+            <input type="submit" value="Join Waitlist" class="btn" />
+          </div>
+
+          <div id="verification">
+            <img src="./Assets/Checkmark.svg" alt="Checkmark" />
+            <p>No spam, ever. Unsubscribe anytime.</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <section class="footer">
+      <div class="socials-container">
+        <a href="#" class="socials">Facebook</a>
+        <a href="#" class="socials">Instagram</a>
+        <a href="#" class="socials">Twitter</a>
+      </div>
+      <div class="help-container">
+        <div class="help">
+          <img
+            src="./Assets/Help Avatar.svg"
+            alt="Help Avatar"
+            id="help-avatar"
+          />
+          <p id="question">Have any questions?</p>
+          <p id="bold">Talk to a specialist</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

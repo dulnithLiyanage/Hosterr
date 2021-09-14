@@ -1,0 +1,23 @@
+// ? Colors
+
+$primary-color: black;
+$background-color: #f9f4e8;
+$text-color: #525252;
+$button-color: #4977ea;
+
+// ? Fonts
+
+$main-font: "Playfair Display", serif;
+$secondary-font: "Lato", sans-serif;
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-start {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+} ;
